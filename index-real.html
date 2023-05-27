@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+  <link rel="stylesheet" href="./w3.css">
+  <link rel="stylesheet" href="./family_montserrat.css">
+  <link rel="stylesheet" href="./font.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('./Me\ \(2\).jpg');
+      min-height: 100%;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Education</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:30% 16px" id="home">
+      <h1 class="w3-jumbo"><b>Hi! I am Vaibhav Singh</b></h1>
+      <p>Front-End Devloper.</p>
+      <img src="./Me (2).jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="./Me (2).jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+      <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-32 w3-content" id="portfolio">
+      <h2 class="w3-text-grey">My Education</h2>
+      <!-- <hr class="w3-opacity"> -->
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <div class="ug" style="padding-top: 25px;">
+            <p class="w3-text-grey" style="    margin: 5px 0;">2020-2023</p>
+            <b style="color:#413e3e;">Bachelor of Art</b>
+            <p class="w3-text-grey" style="    margin: 5px 0;">C.S.J.M , Kanpur University</p>
+          </div>
+
+          <div class="intermediate" style="padding-top: 25px;">
+            <p class="w3-text-grey" style="    margin: 5px 0;">2019-2020</p>
+            <b style="color:#413e3e;">Intermediate</b>
+            <p class="w3-text-grey" style="    margin: 5px 0;">S.V.M.I.C , UP BOARD</p>
+          </div>
+
+          <div class="highschool" style="padding-top: 25px;">
+            <p class="w3-text-grey" style="    margin: 5px 0;">2017-2018</p>
+            <b style="color:#413e3e;">Hightschool</b>
+            <p class="w3-text-grey" style="    margin: 5px 0;">S.V.M.I.C , UP BOARD</p>
+          </div>
+          <!-- <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+          <img src="./IMG_20210729_102902.jpg" style="width:100%">
+          <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="width:100%"> -->
+        </div>
+
+        <div class="w3-half">
+          <!-- <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%"> -->
+          <!-- <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+          <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%"> -->
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p style="margin-bottom: 35px;">Welcome to my vibrant portfolio, where creativity and innovation meet flawless
+        frontend development! As a
+        passionate frontend developer, I specialize in crafting visually stunning and interactive web experiences that
+        captivate users from the moment they land on a page.
+        <br>
+        <!-- <br> -->
+        <!-- With an unwavering commitment to aesthetics and user-centered design, I transform ideas into pixel-perfect
+        masterpieces. Through meticulous attention to detail, I create seamless user interfaces that engage and inspire,
+        leaving a lasting impression on anyone who interacts with my work.
+        <br>
+        <br> -->
+        <!-- Driven by a relentless pursuit of excellence, -->
+        I combine my expertise in HTML, CSS, and JavaScript to bring
+        imagination to life. Whether it's building dynamic single-page applications, optimizing website performance, or
+        creating intuitive navigation, I pride myself on delivering the highest quality frontend solutions.
+        <br>
+        <!-- <br>
+        Incorporating the latest industry trends and best practices, I stay ahead of the curve to ensure my projects are
+        not just visually appealing, but also future-proof. I am well-versed in modern frameworks and libraries such as
+        React, Vue.js, and Angular, allowing me to leverage the full potential of these tools to deliver exceptional
+        results.
+        <br>
+        <br> -->
+        But it's not just about the code—it's about the experience. I believe that collaboration and effective
+        communication are essential to creating exceptional outcomes. I thrive in cross-functional teams, collaborating
+        closely with designers and backend developers to achieve a harmonious fusion of aesthetics and functionality.
+        <!-- <br> -->
+        <br>
+        Take a moment to explore my portfolio, where you'll find a collection of my proudest achievements. Each project
+        showcases my ability to seamlessly blend creativity and technical expertise, resulting in delightful user
+        experiences. If you're seeking a frontend developer who can breathe life into your vision, I would love to
+        connect and discuss how I can bring your ideas to the forefront of the digital realm.
+        <br>
+        <!-- <br> -->
+        <br>
+        Thank you for visiting, and I can't wait to embark on an exciting journey of collaboration and innovation with
+        you!
+      </p>
+      <h3 class="w3-padding-16">My Skills</h3>
+      <p class="w3-wide">HTML</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide">CSS</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">PHP</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">JavaScript</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">06+</span><br>
+          Partners
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">10+</span><br>
+          Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">420+</span><br>
+          Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">10+</span><br>
+          Meetings
+        </div>
+      </div>
+
+      <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button> -->
+
+      <!-- Testimonials -->
+      <!-- <h3 class="w3-padding-24">My Reputation</h3>
+    <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
+    <p>Vaibhav singh is just awesome. I am so happy to have met her!</p><br>
+   
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Vaibhav singh saved us from a web disaster.</p><br>
+    
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than Vaibhav singh.</p><br> -->
+
+      <!-- Grid for pricing tables -->
+      <!-- <h3 class="w3-padding-16">My Price</h3> -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <!-- <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">5GB Storage</li>
+            <li class="w3-padding-16">Mail Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul> -->
+        </div>
+
+        <div class="w3-half">
+          <!-- <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">50GB Storage</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul> -->
+        </div>
+        <!-- End Grid/Pricing tables -->
+      </div>
+
+      <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="font-size: 30px;"></i> Rishi Nagar
+          Shuklaganj, Unnao, Uttar Pradesh,
+          India</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="font-size: 30px;"></i> (+91) - 7991652863
+        </p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="font-size: 30px;"> </i>
+          vaibhav.anmol.chandel@gmail.com</p>
+        <p><i class="fa fa-linkedin w3-hover-opacity"
+            style="margin-right: 26px;font-size: 30px;padding-left: 10px;"></i>https://</p>
+      </div>
+
+      <!-- Image of location/map -->
+      <!-- <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale"
+        style="width:100%;margin:32px 0"> -->
+      <video src="./location-gif.mp4" autoplay loop class="w3-image" style="width:100%;margin:32px 0 ;"></video>
+
+      <p>Lets get in touch. Send me a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Full Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email Address" required
+            name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject">
+        </p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message">
+        </p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+
+      <!-- whatsapp box -->
+      <a id="myBtntotop" href="https://api.whatsapp.com/send?phone=7991652863&text=Feel%20Free%20to%20Contact%20Us"
+        class="float" target="_blank" title="connect with Us">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
+      <a href="https://m.facebook.com/profile.php?id=100027660518933"><i
+          class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/the_credible_vs/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+      <a href="https://github.com/vaibhavsingh006"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=7991652863&text=Feel%20Free%20to%20Contact%20Us"><i
+          class="fa fa-whatsapp w3-hover-opacity"></i></a>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-small">This website was made by vaibhav singh. !</p>
+      <!-- <a class="w3-button w3-round-xxlarge w3-small w3-dark-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>   -->
+      <!-- End footer -->
+    </footer>
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // whatsapp btn
+
+
+    // Get the button
+    let myBtntotop = document.getElementById("myBtntotop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        myBtntotop.style.display = "grid";
+      } else {
+        myBtntotop.style.display = "none";
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
